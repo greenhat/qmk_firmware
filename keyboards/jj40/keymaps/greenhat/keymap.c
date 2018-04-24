@@ -20,16 +20,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Esc  |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Lower|  Alt | GUI  | Raise| Space(Shift)|BS(RA)| GUI  |  Alt | Lower|      |
+ * |      | Lower|  Alt | GUI  | Raise| Space(Shift)|BS(RA)|  Alt |  GUI | Lower|      |
  * `-----------------------------------------------------------------------------------'
  */
-  // todo swap Alt and GUI
   // todo ",? on modifiers?
 [_QWERTY] = KEYMAP( \
   KC_TAB,     KC_Q,    KC_W,    KC_E,    KC_R,       KC_T,    KC_Y,         KC_U,       KC_I,    KC_O,    KC_P,      KC_QUOT, \
   KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,       KC_G,    KC_H,         KC_J,       KC_K,    KC_L,    KC_SCLN,   KC_RCTL, \
   KC_ESC,     KC_Z,    KC_X,    KC_C,    KC_V,       KC_B,    KC_N,         KC_M,       KC_COMM, KC_DOT,  KC_SLSH,   KC_ENT , \
-  _______, MO(_LOWER), KC_LALT, KC_LGUI, MO(_RAISE), MT(MOD_LSFT, KC_SPC),  LT(_RAISE, KC_BSPC), KC_RGUI, KC_RALT, MO(_LOWER), _______ \
+  _______, MO(_LOWER), KC_LALT, KC_LGUI, MO(_RAISE), MT(MOD_LSFT, KC_SPC),  LT(_RAISE, KC_BSPC), KC_RALT, KC_RGUI, MO(_LOWER), _______ \
 ),
 
 /* Lower
@@ -61,7 +60,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      | Bksp(Shift) |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
-  // todo restore tilde
 [_RAISE] = KEYMAP( \
   KC_GRV,  KC_1,     KC_2,     KC_3,        KC_4,        KC_5,       KC_6,      KC_7,    KC_8,    KC_9,    KC_0,    _______, \
   _______, KC_MINUS, KC_EQUAL, KC_LBRACKET, KC_RBRACKET, KC_BSLASH,  KC_LEFT,   KC_DOWN, KC_UP,  KC_RIGHT, KC_ASTR, _______, \
