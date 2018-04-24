@@ -20,15 +20,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Esc  |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Lower|  Alt | GUI  | Raise| Space(Shift)|BS(RA)|  Alt |  GUI | Lower|      |
+ * |      | Lower|  Alt |"(GUI)|DE(RA)| Space(Shift)|BS(RA)|?(Alt)|  GUI | Lower|      |
  * `-----------------------------------------------------------------------------------'
  */
   // todo ",? on modifiers?
 [_QWERTY] = KEYMAP( \
-  KC_TAB,     KC_Q,    KC_W,    KC_E,    KC_R,       KC_T,    KC_Y,         KC_U,       KC_I,    KC_O,    KC_P,      KC_QUOT, \
-  KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,       KC_G,    KC_H,         KC_J,       KC_K,    KC_L,    KC_SCLN,   KC_RCTL, \
-  KC_ESC,     KC_Z,    KC_X,    KC_C,    KC_V,       KC_B,    KC_N,         KC_M,       KC_COMM, KC_DOT,  KC_SLSH,   KC_ENT , \
-  _______, MO(_LOWER), KC_LALT, KC_LGUI, MO(_RAISE), MT(MOD_LSFT, KC_SPC),  LT(_RAISE, KC_BSPC), KC_RALT, KC_RGUI, MO(_LOWER), _______ \
+  KC_TAB,     KC_Q,    KC_W,    KC_E,           KC_R,          KC_T,    KC_Y,           KC_U,               KC_I,           KC_O,    KC_P,      KC_QUOT, \
+  KC_LCTL,    KC_A,    KC_S,    KC_D,           KC_F,          KC_G,    KC_H,           KC_J,               KC_K,           KC_L,    KC_SCLN,   KC_RCTL, \
+  KC_ESC,     KC_Z,    KC_X,    KC_C,           KC_V,          KC_B,    KC_N,           KC_M,               KC_COMM,        KC_DOT,  KC_SLSH,   KC_ENT , \
+  _______, MO(_LOWER), KC_LALT, LGUI_T(KC_DQT), LT(_RAISE, KC_DEL), MT(MOD_LSFT, KC_SPC),  LT(_RAISE, KC_BSPC), RALT_T(KC_QUES), KC_RGUI, MO(_LOWER), _______ \
 ),
 
 /* Lower
