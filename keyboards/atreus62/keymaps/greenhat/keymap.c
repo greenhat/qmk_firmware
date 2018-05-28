@@ -21,10 +21,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_NAV] = LAYOUT(
-    TO(_DEFAULT),  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11  ,
-    KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_F12,  KC_TRNS, KC_UP,   KC_TRNS, KC_TRNS, KC_TRNS ,
-    KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS ,
-    TO(_RESET),    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS ,
+    _______,    KC_F1,    KC_F2,       KC_F3,       KC_F4,     KC_F5,               KC_F6,     KC_F7,   KC_F8,    KC_F9,  KC_F10, KC_F11 ,
+    _______,  _______,  _______,     _______,     _______,   _______,               _______, _______, _______,  _______, _______, _______,
+    _______, KC_MINUS, KC_EQUAL, KC_LBRACKET, KC_RBRACKET, KC_BSLASH,               KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT, KC_ASTR, _______, 
+    _______,  KC_EXLM,  KC_PLUS,     KC_LCBR,     KC_RCBR,   KC_CIRC,                KC_DLR, KC_LPRN, KC_RPRN,  KC_PERC, KC_HASH, _______, 
     KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
   ),
 
