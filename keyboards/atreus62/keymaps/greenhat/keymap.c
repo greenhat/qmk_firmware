@@ -10,7 +10,6 @@
 #define _DEFAULT 0
 #define _NAV 1
 #define _RESET 2
-#define _LOW 3
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DEFAULT] = LAYOUT( /* qwerty */
