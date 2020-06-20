@@ -38,16 +38,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO  ,       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,  KC_NO  ,  KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , RESET
   ),
 
-//  **map f and j to lower on hold and move ‘{[-_   +=]}~ to home row**
-
-  [_LOW] = LAYOUT(
-    KC_NO  ,       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO   ,
-    KC_NO  ,       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO   ,
-    KC_NO  ,     KC_GRAVE, KC_LCBR, KC_MINUS, KC_TRNS, KC_UNDS,                     KC_PLUS, KC_TRNS, KC_EQUAL, KC_RCBR, KC_TILDE, KC_NO   ,
-    KC_NO  ,       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,                     KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO   ,
-    KC_NO  ,       KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_LBRC, KC_RBRC, KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
-  )
-
   /*
   [_TRNS] = LAYOUT(
     KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS ,
@@ -59,23 +49,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 };
 
-
-
-const uint16_t PROGMEM fn_actions[] = {
-
-};
-
-const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
-  // MACRODOWN only works in this function
-  switch (id) {
-  case 0:
-    if (record->event.pressed) {
-      register_code(KC_RSFT);
-    }
-    else {
-      unregister_code(KC_RSFT);
-    }
-    break;
-  }
-  return MACRO_NONE;
-};
