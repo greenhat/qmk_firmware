@@ -18,14 +18,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* KC_LCTL,   KC_A,    KC_S,    KC_D, LT(_LOW, KC_F), KC_G,                    KC_H, LT(_LOW, KC_J),KC_K, KC_L,    KC_SCLN, KC_RCTL , */
     KC_LALT,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                        KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_RALT ,
     KC_EQUAL,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT ,
-    KC_LCTL, KC_NO, KC_GRV, KC_LBRACKET, KC_LGUI, MT(MOD_LCTL, KC_ESC), MT(MOD_LSFT, KC_SPC),       MT(MOD_RSFT, KC_BSPC),  MT(MOD_RCTL, KC_DELETE), MO(_NAV), KC_RBRACKET, KC_GRV, KC_NO, KC_ENT
+    KC_LCTL, KC_NO, KC_GRV, KC_LBRACKET, MT(MOD_LGUI, KC_UNDS), MT(MOD_LCTL, KC_ESC), MT(MOD_LSFT, KC_SPC),       MT(MOD_RSFT, KC_BSPC),  MT(MOD_RCTL, KC_DELETE), MO(_NAV), KC_RBRACKET, KC_GRV, KC_NO, KC_ENT
   ),
 
   [_NAV] = LAYOUT(
     _______,     KC_F1,    KC_F2,       KC_F3,       KC_F4,     KC_F5,               KC_F6,     KC_F7,   KC_F8,    KC_F9,  KC_F10, KC_F11 ,
-   KC_TILDE, _______,  _______,     _______,     KC_PIPE,   _______,               _______, _______, _______,  _______, _______,   _______,
+   KC_TILDE,  KC_HOME,  _______,     _______,     KC_PIPE,   _______,               _______, _______, _______,  _______, _______,   _______,
     _______, KC_GRAVE, KC_BSLASH,    KC_UNDS,    KC_MINUS,   _______,               KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT, _______, _______,
-    _______,  _______,  _______,     _______,     _______,   _______,                _______, KC_PGDOWN, KC_PGUP, _______, _______, _______,
+    _______,   KC_END,  _______,     _______,     _______,   _______,                _______, KC_PGDOWN, KC_PGUP, _______, _______, _______,
     KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
   ),
 
